@@ -34,7 +34,7 @@
     left: 0
     background-color: $primary
     color: #fff
-    transform: translateY(-100%)
+    transform: translateY(-200%)
     transition: 0.2s
     &-active
         transform: translateY(0% ) 
@@ -78,3 +78,23 @@
         display: block
         font-size: 14px
         color: $text-color-light
+
+@media (max-width: 991px)
+    .navbar
+        &__mobile, &__another-phone
+            display: none
+@media (max-width: 991px)
+    .logo
+        display: none
+
+@media (max-width: 576px)
+    .navbar__logo
+        display: none
+    .menu
+        &-button
+            display: inline
+            height: 60px    
+        &__nav
+            flex-direction: column
+            height: 50%
+            

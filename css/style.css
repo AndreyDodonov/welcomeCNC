@@ -28,6 +28,25 @@ body {
   margin: auto;
 }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768 px) {
+  .container {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+}
+
 .navbar {
   position: fixed;
   left: 0;
@@ -69,7 +88,7 @@ body {
   left: 0;
   background-color: #507fe1;
   color: #fff;
-  transform: translateY(-100%);
+  transform: translateY(-200%);
   transition: 0.2s;
 }
 
@@ -125,6 +144,32 @@ body {
   color: #7b7b79;
 }
 
+@media (max-width: 991px) {
+  .navbar__mobile, .navbar__another-phone {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar__logo {
+    display: none;
+  }
+  .menu-button {
+    display: inline;
+    height: 60px;
+  }
+  .menu__nav {
+    flex-direction: column;
+    height: 50%;
+  }
+}
+
 .button-o {
   text-transform: uppercase;
   border: 2px solid #507fe1;
@@ -144,6 +189,13 @@ button {
   font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
+@media (max-width: 576px) {
+  .button-o {
+    font-size: 8px;
+    margin-right: 30px;
+  }
+}
+
 .hero {
   background: #f1f1f1 url("../images/machine_5axis-1024x576.jpg") no-repeat center top 80px;
   background-size: contain;
@@ -161,5 +213,12 @@ button {
   font-size: 30px;
   margin-bottom: 67px;
   font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    background-size: cover;
+    background-position: top left;
+  }
 }
 /*# sourceMappingURL=style.css.map */
