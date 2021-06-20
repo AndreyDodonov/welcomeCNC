@@ -81,7 +81,7 @@ body {
 
 .menu {
   position: fixed;
-  z-index: 0;
+  z-index: 1;
   top: 80px;
   padding: 16px 0;
   width: 100%;
@@ -172,32 +172,6 @@ body {
   }
 }
 
-.button-o {
-  text-transform: uppercase;
-  border: 2px solid #507fe1;
-  padding: 17px 22px;
-  font-size: 12px;
-  color: #507fe1;
-  background-color: #fff;
-  font-family: 'Proxima Nova Semibold', sans-serif;
-}
-
-button {
-  text-transform: uppercase;
-  border: none;
-  padding: 25px 45px;
-  color: #ffffff;
-  background-color: #507fe1;
-  font-family: 'Proxima Nova Semibold', sans-serif;
-}
-
-@media (max-width: 576px) {
-  .button-o {
-    font-size: 8px;
-    margin-right: 30px;
-  }
-}
-
 .hero {
   background: #f1f1f1 url("../images/machine_5axis-1024x576.jpg") no-repeat center top 80px;
   background-size: contain;
@@ -208,6 +182,11 @@ button {
 .hero__title {
   font-size: 30px;
   margin-bottom: 40px;
+  background-color: #fff;
+  opacity: 0.6;
+  width: 300px;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .hero__subtitle {
@@ -215,12 +194,188 @@ button {
   font-size: 30px;
   margin-bottom: 67px;
   font-family: 'Proxima Nova Semibold', sans-serif;
+  background-color: #fff;
+  opacity: 0.6;
+  width: 300px;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 @media (max-width: 991px) {
   .hero {
     background-size: 100%;
     background-position: top 60px left;
+  }
+}
+
+@media (max-width: 770px) {
+  .hero {
+    padding-bottom: 20px;
+  }
+  .hero__title {
+    margin-left: 10px;
+  }
+  .hero__subtitle {
+    margin-left: 10px;
+  }
+  .hero__button {
+    margin-left: 10px;
+  }
+}
+
+.button-o {
+  text-transform: uppercase;
+  border: 2px solid #507fe1;
+  padding: 17px 22px;
+  font-size: 12px;
+  color: #507fe1;
+  background-color: #fff;
+  border-radius: 3px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.button {
+  text-transform: uppercase;
+  border: none;
+  padding: 25px 45px;
+  color: #ffffff;
+  background-color: #507fe1;
+  border-radius: 5px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+@media (max-width: 576px) {
+  .button-o {
+    font-size: 8px;
+    margin-right: 30px;
+  }
+}
+
+.input {
+  height: 80px;
+  padding: 30px;
+  width: 100%;
+  border: 1px solid #dddddd;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox:checked + label:before {
+  background-color: #507fe1;
+}
+
+.checkbox-label {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  margin-right: 42px;
+}
+
+.checkbox-label:hover {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.checkbox-label:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dddddd;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.bg-secondary {
+  background: #f1f1f1;
+}
+
+.offer {
+  padding: 129px 0;
+}
+
+.offer-block {
+  background: #fff url("../images/offer-block-image.png") no-repeat right top;
+  background-size: 30%;
+  padding: 80px;
+  margin-top: -300px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 5px;
+}
+
+.offer-block__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.offer-block__subtitle {
+  font-size: 21px;
+  display: block;
+  margin-bottom: 48px;
+}
+
+.form__row {
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  margin-bottom: 25px;
+}
+
+.form__row:last-child {
+  margin-bottom: 0;
+}
+
+.form__label {
+  font-size: 17px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form__group {
+  flex-basis: 33.33%;
+}
+
+.form__input {
+  width: 100%;
+  border-right-width: 0px;
+}
+
+.form__input:last-child {
+  border-right-width: 1px;
+}
+
+.form__button {
+  height: 80px;
+  width: 100%;
+  font-size: 12px;
+}
+
+@media (max-width: 990px) {
+  .offer-block {
+    background: #f1f1f1;
+    margin: 0px 40px;
+    padding: 10px 20px 10px;
+  }
+  .offer-block__title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 990px) {
+  .form__row {
+    flex-direction: column;
+  }
+  .form__row-checkboxes {
+    flex-direction: row;
+  }
+  .form__group {
+    flex-basis: 100%;
+    width: 100%;
+  }
+  .form__input {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

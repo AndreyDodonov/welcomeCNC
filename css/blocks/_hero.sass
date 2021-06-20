@@ -7,13 +7,34 @@
     &__title
         font-size: 30px
         margin-bottom: 40px 
+        background-color: #fff
+        opacity: 0.6
+        width: 300px
+        padding: 5px
+        border-radius: 10px
+        
     &__subtitle
         display: block
         font-size: 30px
         margin-bottom: 67px
-        +bold       
+        +bold
+        background-color: #fff
+        opacity: 0.6
+        width: 300px
+        padding: 5px
+        border-radius: 10px       
 
 @media (max-width: 991px)
     .hero
         background-size: 100%
-        background-position: top 60px left      
+        background-position: top 60px left
+
+@media (max-width: 770px)
+    .hero
+        padding-bottom: 20px
+        &__title
+            margin-left: 10px
+        &__subtitle
+            margin-left: 10px
+        &__button
+            margin-left: 10px                
