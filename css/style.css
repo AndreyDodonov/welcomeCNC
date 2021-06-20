@@ -89,11 +89,13 @@ body {
   background-color: #507fe1;
   color: #fff;
   transform: translateY(-200%);
+  opacity: 0;
   transition: 0.2s;
 }
 
 .menu-active {
   transform: translateY(0%);
+  opacity: 1;
 }
 
 .menu__nav {
@@ -217,8 +219,8 @@ button {
 
 @media (max-width: 991px) {
   .hero {
-    background-size: cover;
-    background-position: top left;
+    background-size: 100%;
+    background-position: top 60px left;
   }
 }
 /*# sourceMappingURL=style.css.map */
