@@ -1,6 +1,24 @@
 .bg-secondary
     background: $bg-secondary
 
+// for all sections
+
+.section
+    padding: 100px 0
+    &-title
+        font-size: 30px
+        text-align: center
+        text-transform: uppercase
+        +bold
+    &__title
+        margin-bottom: 100px
+@media (max-width: 576px)           
+    .section
+        padding: 60px 0
+        &-title
+            font-size: 24px
+
+// section offer
 .offer
     padding: 129px 0
     &-block
@@ -66,4 +84,12 @@
             width: 100% 
         &__input
             margin-bottom: 20px 
-      
+
+@media (max-width: 650px)
+    .form
+        &__row
+            flex-direction: column
+            &-checkboxes
+                flex-direction: column  
+// section features
+
