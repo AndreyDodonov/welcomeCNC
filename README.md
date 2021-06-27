@@ -1,5 +1,5 @@
-### TeProGOST
+### WelcomeCNC
 
-On this page you can create techical process according to GOST.
+Landing page of WelcomeCNC - social network for engeneers, machinist etc.
 
 v 0.1 start project ))
